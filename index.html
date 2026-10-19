@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UBF2113 Prinsip Ekonomi – Topik 1: Pengenalan Mikroekonomi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6fa;--card:#fff;--ink:#16243b;--mut:#55627a;--pri:#0f766e;--acc:#f59e0b;--soft:#e3f1ef;--line:#d6dfe8;--bad:#b4442f;--good:#1b7a46}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1626;--card:#16233a;--ink:#e8eef7;--mut:#9fb0c8;--pri:#2dd4bf;--acc:#fbbf24;--soft:#12353a;--line:#2a3a56;--bad:#f28b73;--good:#5fd391}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0 0 .6em}
+header{background:linear-gradient(135deg,#0b3b46,#0f766e);color:#fff;padding:56px 20px 70px}
+.wrap{max-width:1040px;margin:auto}
+header h1{font-size:clamp(2rem,6vw,3.6rem);font-weight:800;max-width:15ch}
+header p{max-width:60ch;opacity:.92;margin:0 0 20px}
+.tags span{display:inline-block;background:rgba(255,255,255,.16);border-radius:99px;padding:3px 14px;margin:0 8px 8px 0;font-size:.85rem}
+nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+nav .wrap{display:flex;gap:4px;padding:0 12px}
+nav a{padding:14px 12px;color:var(--mut);text-decoration:none;font-weight:500;font-size:.92rem;border-bottom:3px solid transparent}
+nav a:hover,nav a:focus-visible{color:var(--pri);border-color:var(--acc);outline:none}
+main{max-width:1040px;margin:auto;padding:10px 20px 60px}
+section{margin-top:48px}
+h2{font-size:1.9rem;display:flex;gap:12px;align-items:center}
+h2 .n{background:var(--acc);color:#1b1b1b;border-radius:10px;padding:0 11px;font-size:1.2rem}
+h3{font-size:1.2rem;color:var(--pri);margin-top:1.4em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:14px 0}
+.def{border-left:6px solid var(--acc);background:var(--soft);border-radius:0 12px 12px 0;padding:16px 20px;font-size:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.grid .card{margin:0}
+.grid .ic{font-size:2rem}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:2px 18px}
+summary{cursor:pointer;font-weight:700;padding:12px 0}
+summary:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.scroll{overflow-x:auto}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+button{font:inherit;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 14px;cursor:pointer}
+button[aria-pressed=true],button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.dark-btn{color:var(--ink)}
+svg{max-width:100%;height:auto}
+svg text{fill:var(--ink);font:13px "Public Sans",sans-serif}
+.ppc-box{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px;align-items:center}
+@media(max-width:720px){.ppc-box{grid-template-columns:1fr}}
+.out{font-weight:500}.out b{color:var(--pri)}
+ul{padding-left:1.2em}li{margin:.25em 0}
+.pro li::marker{color:var(--good)}.con li::marker{color:var(--bad)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:720px){.two{grid-template-columns:1fr}}
+.two h4{margin:0 0 6px}.two .p h4{color:var(--good)}.two .k h4{color:var(--bad)}
+.tag{display:inline-block;background:var(--acc);color:#1b1b1b;border-radius:6px;padding:0 8px;font-weight:700;font-size:.85rem}
+footer{text-align:center;color:var(--mut);font-size:.85rem;padding:30px 20px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="tags"><span>Jabatan Perniagaan</span><span>Diploma Pengurusan Perniagaan</span><span>Semester 2 · 2024/2025</span></div>
+<h1>Pengenalan kepada Mikroekonomi</h1>
+<p>UBF2113 Prinsip Ekonomi · Nota Kuliah 1. Daripada kehendak yang tidak terhad kepada pilihan, kos lepas dan sistem ekonomi.</p>
+</div></header>
+<nav aria-label="Kandungan"><div class="wrap">
+<a href="#s11">1.1 Definisi</a><a href="#s12">1.2 Konsep Asas</a><a href="#s13">1.3 Sumber Ekonomi</a><a href="#s14">1.4 Masalah Asas</a><a href="#s15">1.5 KKP</a><a href="#s16">1.6 Sistem Ekonomi</a>
+</div></nav>
+<main>
+
+<section id="s11"><h2><span class="n">1.1</span>Definisi Ekonomi</h2>
+<p class="def">Ekonomi ialah kajian sains sosial tentang bagaimana manusia menggunakan <b>sumber yang terhad</b> untuk memenuhi <b>kehendak yang tidak terhad</b>.</p>
+<p>Keputusan ekonomi dibuat oleh tiga agen: <b>isi rumah</b>, <b>firma</b> dan <b>kerajaan</b>. Mereka memilih bagaimana sumber yang terhad digunakan untuk mengeluarkan barang dan perkhidmatan.</p>
+<div class="grid">
+<div class="card"><div class="ic">💰</div><h3>Sains tentang kekayaan</h3><p>Adam Smith, F. A. Walker dan J. B. Say: ekonomi mengkaji cara negara mengumpul kekayaan untuk menjadi makmur.</p></div>
+<div class="card"><div class="ic">🤝</div><h3>Sains tentang alat kebajikan</h3><p>Alfred Marshall, Lord Beveridge, Canna dan Pigou: kekayaan dikumpul untuk meningkatkan kebajikan masyarakat.</p></div>
+<div class="card"><div class="ic">⚖️</div><h3>Sains tentang kekurangan dan pilihan</h3><p>Keynes dan Benham: pengurusan sumber terhad, penentu pendapatan negara, kecekapan, pertumbuhan dan kestabilan ekonomi.</p></div>
+</div></section>
+
+<section id="s12"><h2><span class="n">1.2</span>Konsep Asas Ekonomi</h2>
+<h3>Bidang ekonomi</h3>
+<div class="card scroll"><table>
+<tr><th></th><th>Mikroekonomi 🔍</th><th>Makroekonomi 🌏</th></tr>
+<tr><td>Skop</td><td>Unit ekonomi kecil: individu, isi rumah dan firma</td><td>Keseluruhan aktiviti ekonomi sesebuah negara</td></tr>
+<tr><td>Fokus</td><td>Keputusan dalam pasaran, harga barangan, cara memaksimumkan kepuasan atau keuntungan</td><td>Pendapatan negara, inflasi, pengangguran, perdagangan antarabangsa, imbangan pembayaran</td></tr>
+<tr><td>Harga</td><td>Harga sesuatu barang ditentukan oleh permintaan dan penawaran</td><td>Tahap harga umum, diukur melalui indeks harga</td></tr>
+<tr><td>Peranan kerajaan</td><td>Individu berinteraksi dalam pasaran</td><td>Kesan tindakan kerajaan dalam ekonomi</td></tr>
+</table></div>
+
+<h3>Tiga masalah mikroekonomi</h3>
+<div class="grid">
+<div class="card"><div class="ic">🚧</div><h3>Kekurangan</h3><p>Kehendak melebihi sumber yang ada. Individu tidak mampu memiliki semua barang, firma tidak dapat mengeluarkan semuanya, kerajaan tidak dapat membiayai semua projek serentak.</p></div>
+<div class="card"><div class="ic">🛒</div><h3>Pilihan</h3><p>Kekurangan memaksa semua agen memilih mengikut kepentingan. Contoh: kasut atau baju, bisnes baru atau ambil alih, hospital atau taman rekreasi.</p></div>
+<div class="card"><div class="ic">🏷️</div><h3>Kos lepas</h3><p>Barang <b>kedua terbaik</b> yang dilepaskan apabila satu pilihan dibuat. Beli baju → kos lepasnya kasut. Bina hospital → kos lepasnya taman rekreasi.</p></div>
+</div>
+<details><summary>Bagaimana masalah kekurangan boleh diatasi?</summary><ul><li>Memaksimumkan penggunaan sumber ekonomi</li><li>Menaik taraf kapasiti sumber dan teknologi</li><li>Meningkatkan keberkesanan pengurusan produktiviti dan pengedaran</li><li>Mengagihkan barangan atau pendapatan secara saksama</li></ul></details>
+</section>
+
+<section id="s13"><h2><span class="n">1.3</span>Sumber Ekonomi / Faktor Pengeluaran</h2>
+<p>Sumber ekonomi ialah semua faktor yang digunakan dalam proses pengeluaran barang dan perkhidmatan. Ada <b>lima</b> sumber.</p>
+<div class="card scroll"><table>
+<tr><th>Sumber</th><th>Penerangan</th><th>Pulangan</th></tr>
+<tr><td>🌴 Tanah</td><td>Anugerah alam: tanah, galian, hasil hutan, sumber air. Penawaran tetap. Tiada mobiliti geografi tetapi ada mobiliti kegunaan.</td><td><span class="tag">Sewa</span></td></tr>
+<tr><td>👷 Buruh</td><td>Tenaga fizikal dan mental. Mahir, separuh mahir, tidak mahir. Kualiti dipengaruhi pendidikan, pengalaman, latihan, kesihatan dan motivasi. Ada mobiliti tempat dan kegunaan.</td><td><span class="tag">Upah</span></td></tr>
+<tr><td>⚙️ Modal</td><td>Dicipta manusia: kelengkapan, mesin, bahan mentah. Ada mobiliti tempat, boleh berkurang atau bertambah, dan meningkatkan keupayaan pengeluaran.</td><td><span class="tag">Bunga / faedah</span></td></tr>
+<tr><td>💡 Usahawan</td><td>Menggabungkan tanah, buruh dan modal. Pemimpin, perancang, pengawal, pembawa inovasi dan penanggung risiko.</td><td><span class="tag">Untung</span></td></tr>
+<tr><td>🖥️ Teknologi</td><td>Bukan salah satu sumber ekonomi. Dihasilkan manusia, meningkatkan keberkesanan firma dan mengurangkan kos.</td><td><span class="tag">Produktiviti / output</span></td></tr>
+</table></div></section>
+
+<section id="s14"><h2><span class="n">1.4</span>Masalah Asas Ekonomi</h2>
+<p>Berpunca daripada kehendak tidak terhad dan sumber terhad. Setiap masyarakat mesti menjawab empat soalan.</p>
+<div class="grid">
+<div class="card"><h3>❶ Apa yang dikeluarkan?</h3><p>Pilih kombinasi barang dan perkhidmatan mengikut keutamaan untuk memaksimumkan kepuasan.</p></div>
+<div class="card"><h3>❷ Berapa banyak?</h3><p>Tentukan kuantiti supaya tiada lebihan permintaan atau penawaran. Lebihan pengeluaran bermakna pembaziran sumber.</p></div>
+<div class="card"><h3>❸ Bagaimana?</h3><p>Pilih kaedah paling cekap, intensif buruh atau intensif modal, supaya kos diminimumkan.</p></div>
+<div class="card"><h3>❹ Untuk siapa?</h3><p>Agihan ditentukan oleh corak agihan pendapatan. Pendapatan tinggi membolehkan pemilikan lebih banyak barang.</p></div>
+</div></section>
+
+<section id="s15"><h2><span class="n">1.5</span>Keluk Kemungkinan Pengeluaran (KKP)</h2>
+<p class="def">KKP menunjukkan <b>had maksimum</b> pelbagai kombinasi dua barang yang dapat dihasilkan apabila semua sumber digunakan secara cekap pada tingkat teknologi tertentu.</p>
+<p><b>Andaian:</b> dua barang sahaja · teknologi tetap · sumber tetap (kuantiti dan kualiti) · sumber digunakan sepenuhnya dan cekap.</p>
+
+<h3>Cuba sendiri: kos lepas di sepanjang KKP</h3>
+<div class="card"><div class="ppc-box">
+<svg id="ppc" viewBox="0 0 360 280" role="img" aria-label="Graf KKP"></svg>
+<div><div class="btns" id="pts"></div><p class="out" id="out"></p></div>
+</div>
+<p style="font-size:.85rem;color:var(--mut)">Data Jadual 1 dalam nota. Perhatikan kos lepas semakin meningkat, sebab itu keluk berbentuk cembung.</p></div>
+
+<h3>Dua jenis KKP</h3>
+<div class="two">
+<div class="card"><h4>Kos lepas meningkat (cembung)</h4><p>Setiap tambahan 1 unit barang A, barang B yang dilepaskan semakin banyak: 1, 2, 3, 4 unit. Contoh A→B: 15 − 14 = 1 unit; B→C: 14 − 12 = 2 unit.</p></div>
+<div class="card"><h4>Kos lepas malar (garis lurus)</h4><p>Setiap tambahan 1 unit barang A, barang B yang dilepaskan sentiasa sama (2 unit): 10 − 8 = 2, 8 − 6 = 2.</p></div>
+</div>
+
+<h3>Kaitan KKP dengan masalah ekonomi</h3>
+<div class="card scroll"><table>
+<tr><th>Konsep</th><th>Ditunjukkan oleh KKP</th></tr>
+<tr><td>Kekurangan</td><td>Di had maksimum, pengeluaran satu barang hanya boleh ditambah dengan mengurangkan barang lain.</td></tr>
+<tr><td>Pilihan</td><td>Pergerakan titik di sepanjang KKP (A ke F) menunjukkan pilihan peruntukan sumber.</td></tr>
+<tr><td>Kos lepas</td><td>Kecerunan KKP menurun dari kiri ke kanan: untuk dapat lebih satu barang, sejumlah barang lain perlu dilepaskan.</td></tr>
+</table></div>
+
+<h3>Kecekapan dan titik di luar KKP</h3>
+<div class="grid">
+<div class="card"><svg viewBox="0 0 300 230" role="img" aria-label="Titik G, KKP dan titik H">
+<path d="M40 20V200H280" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--mut)"/>
+<path d="M40 50 Q200 55 230 200" fill="none" stroke="#0f766e" stroke-width="3"/>
+<circle cx="95" cy="135" r="6" fill="#f59e0b"/><text x="104" y="130">G (dalam)</text>
+<circle cx="200" cy="82" r="6" fill="#0f766e"/><text x="140" y="70">pada KKP</text>
+<circle cx="245" cy="70" r="6" fill="#b4442f"/><text x="206" y="56">H (luar)</text>
+<text x="8" y="16">Barang A</text><text x="236" y="218">Barang B</text></svg>
+<p><b>G (di dalam KKP):</b> tidak cekap, ada sumber tidak digunakan, wujud pengangguran dan pembaziran. <b>H (di luar KKP):</b> tidak boleh dicapai kerana kekurangan sumber dan teknologi.</p></div>
+<div class="card"><h3>Dua jenis kecekapan</h3><ul><li><b>Kecekapan pengeluaran:</b> output maksimum dengan input minimum, iaitu pada kos terendah.</li><li><b>Kecekapan peruntukan:</b> memilih titik pada KKP yang paling dikehendaki masyarakat.</li></ul></div>
+</div>
+
+<h3>Faktor yang menggeser KKP</h3>
+<div class="btns" id="shiftBtns"><button class="on" data-s="out" aria-pressed="true">Pertumbuhan: KKP beralih keluar</button><button data-s="a" aria-pressed="false">Teknologi barang A sahaja</button><button data-s="b" aria-pressed="false">Teknologi barang B sahaja</button><button data-s="in" aria-pressed="false">Bencana alam: KKP beralih ke dalam</button></div>
+<div class="card"><div class="ppc-box">
+<svg id="shift" viewBox="0 0 320 250" role="img" aria-label="Peralihan KKP"></svg>
+<div><p class="out" id="shiftTxt"></p>
+<ul><li><b>Kuantiti faktor pengeluaran</b> bertambah → pertumbuhan ekonomi.</li><li><b>Teknologi</b> maju: kaedah lebih cekap, teknik pengurusan, ICT, pendidikan dan kemahiran buruh.</li><li><b>Bencana alam</b> merosakkan harta benda → keupayaan pengeluaran jatuh.</li></ul></div>
+</div></div></section>
+
+<section id="s16"><h2><span class="n">1.6</span>Sistem Ekonomi</h2>
+<p>Cara masyarakat memilih untuk mengagihkan sumber bagi menyelesaikan masalah asas ekonomi.</p>
+<div class="btns" id="sysBtns" role="tablist"></div>
+<div class="card" id="sysBox" aria-live="polite"></div>
+
+<h3>Penyelesaian empat masalah asas mengikut sistem</h3>
+<div class="card scroll"><table>
+<tr><th>Soalan</th><th>Pasaran bebas</th><th>Perancangan pusat</th><th>Campuran</th><th>Islam</th></tr>
+<tr><td>Apa?</td><td>Kuasa pasaran, ikut permintaan pengguna</td><td>Kerajaan melalui badan perancang</td><td>Kuasa pasaran; kerajaan keluarkan yang swasta tidak keluarkan</td><td>Kuasa pasaran asalkan halal; kerajaan tampung kekurangan swasta</td></tr>
+<tr><td>Berapa?</td><td>Permintaan dan penawaran</td><td>Ditentukan kerajaan</td><td>Permintaan dan penawaran</td><td>Permintaan dan penawaran</td></tr>
+<tr><td>Bagaimana?</td><td>Kos minimum, untung maksimum</td><td>Kos kebajikan; intensif buruh jika mahu kurangkan pengangguran</td><td>Kos minimum; kerajaan jamin keadilan sosial dan kesan luaran</td><td>Kos minimum dengan campur tangan untuk keadilan sosial</td></tr>
+<tr><td>Untuk siapa?</td><td>Pendapatan; golongan kaya dapat lebih</td><td>Mengikut keperluan; sistem catuan</td><td>Kuasa beli; kerajaan sediakan barang awam</td><td>Kuasa beli; golongan tidak mampu diberi keperluan asas</td></tr>
+</table></div>
+</section>
+</main>
+<footer>Nota Kuliah 1 · UBF2113 Prinsip Ekonomi · Bahagian Pendidikan dan Latihan Teknikal Vokasional, KPM · Disesuaikan sebagai laman web pembelajaran</footer>
+
+<script>
+// ===== KKP interaktif =====
+const D=[[0,15],[1,14],[2,12],[3,9],[4,5],[5,0]],L="ABCDEF",X=a=>45+a*55,Y=b=>240-b*14;
+const svg=document.getElementById("ppc"),pts=document.getElementById("pts"),out=document.getElementById("out");
+function drawPPC(i){
+  let s=`<path d="M45 10V240H330" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--mut)"/>`;
+  s+=`<path d="M${D.map(p=>X(p[0])+" "+Y(p[1])).join("L")}" fill="none" stroke="#0f766e" stroke-width="3"/>`;
+  D.forEach((p,k)=>{s+=`<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="${k==i?9:5}" fill="${k==i?"#f59e0b":"#0f766e"}"/><text x="${X(p[0])+9}" y="${Y(p[1])-8}">${L[k]}</text>`});
+  s+=`<text x="48" y="22">Barang B</text><text x="268" y="258">Barang A</text>`;
+  svg.innerHTML=s;
+  const p=D[i];let t=`Titik <b>${L[i]}</b>: ${p[0]} unit A dan ${p[1]} unit B. `;
+  t+=i<5?`Untuk tambah 1 unit A (ke titik ${L[i+1]}), barang B berkurang ${p[1]-D[i+1][1]} unit. Itulah <b>kos lepasnya</b>.`:`Semua sumber dalam barang A; barang B sifar.`;
+  out.innerHTML=t;
+  [...pts.children].forEach((b,k)=>b.setAttribute("aria-pressed",k==i));
+}
+D.forEach((_,i)=>{const b=document.createElement("button");b.textContent="Titik "+L[i];b.onclick=()=>drawPPC(i);pts.appendChild(b)});
+drawPPC(1);
+
+// ===== Peralihan KKP =====
+const base="M40 70Q40 70 40 70",A0=[200,200],T={
+ out:{p:[250,260],c:[90,200],t:"Pertambahan faktor pengeluaran atau teknologi serentak menggeser KKP ke luar (AB ke QP): ekonomi boleh mengeluarkan lebih banyak kedua-dua barang."},
+ a:{p:[200,260],c:[90,140],t:"Kemajuan teknologi dalam satu barang sahaja menggeser KKP pada paksi barang itu sahaja (AB ke AC)."},
+ b:{p:[200,200],c:[160,140],t:"Kemajuan teknologi dalam barang pada paksi mendatar sahaja menggeser KKP pada paksi itu sahaja (AB ke BC)."},
+ in:{p:[200,200],c:[90,140],t:"Bencana alam yang merosakkan harta benda mengurangkan keupayaan pengeluaran. KKP beralih ke dalam (RS ke PQ)."}};
+function curve(w,h,col,dash){return `<path d="M40 ${240-h} Q${40+w*.75} ${240-h+8} ${40+w} 240" fill="none" stroke="${col}" stroke-width="3" ${dash?'stroke-dasharray="6 5"':""}/>`}
+function drawShift(k){
+  const s=document.getElementById("shift");let w0=150,h0=130,w1=w0,h1=h0;
+  if(k=="out"){w1=230;h1=200}if(k=="a"){h1=190}if(k=="b"){w1=230}if(k=="in"){w1=90;h1=80}
+  s.innerHTML=`<path d="M40 10V240H300" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--mut)"/>`+curve(w0,h0,"#8a97ad",true)+curve(w1,h1,"#0f766e")+`<text x="44" y="22">Barang A</text><text x="236" y="258">Barang B</text><text x="${44+w0*.45}" y="${236-h0*.5}" style="fill:var(--mut)">asal</text>`;
+  document.getElementById("shiftTxt").textContent=T[k].t;
+  document.querySelectorAll("#shiftBtns button").forEach(b=>{const on=b.dataset.s==k;b.classList.toggle("on",on);b.setAttribute("aria-pressed",on)});
+}
+document.querySelectorAll("#shiftBtns button").forEach(b=>b.onclick=()=>drawShift(b.dataset.s));
+drawShift("out");
+
+// ===== Sistem ekonomi =====
+const S={
+"Pasaran bebas":{ic:"🏪",ciri:"Faktor pengeluaran dimiliki individu dan swasta. Harga ditentukan kuasa pasaran. Motif: untung maksimum untuk firma, kepuasan maksimum untuk pengguna.",
+ p:["Kegiatan ekonomi diselaras sendiri melalui mekanisme harga","Sumber digunakan secara optimum","Insentif bekerja yang tinggi","Menggalakkan persaingan, inovasi dan teknologi"],
+ k:["Kebajikan sosial diabaikan","Gagal menyediakan barang awam","Kesan luaran negatif, contoh pencemaran air","Kuasa monopoli yang merugikan","Kegiatan ekonomi tidak stabil","Pembaziran sumber, contoh iklan tidak berkesan","Agihan pendapatan tidak setara"]},
+"Perancangan pusat":{ic:"🏛️",ciri:"Semua faktor pengeluaran dimiliki kerajaan. Kerajaan menentukan segala keputusan dan harga. Motif: kebajikan rakyat, bukan untung.",
+ p:["Pengeluaran besar-besaran","Agihan pendapatan setara","Tiada kos persaingan seperti iklan dan promosi","Peruntukan sumber untuk manfaat masyarakat","Kegiatan ekonomi dan harga stabil","Kesan luaran negatif dapat dikurangkan"],
+ k:["Pentadbiran tidak cekap kerana birokrasi","Kebebasan individu terhad","Insentif bekerja rendah","Tidak menggalakkan pertumbuhan ekonomi","Tidak menggalakkan kemajuan teknologi","Kesilapan keputusan kerajaan, pengeluaran berlebihan atau kurang","Kurang persaingan antara firma"]},
+"Campuran":{ic:"🤲",ciri:"Swasta memiliki faktor pengeluaran dan kerajaan campur tangan melalui undang-undang, cukai dan subsidi. Kerajaan juga menyediakan barang awam seperti hospital dan taman rekreasi.",
+ p:["Kerjasama sektor awam dan swasta","Kegiatan ekonomi lebih stabil melalui dasar fiskal dan kewangan","Agihan semula pendapatan melalui cukai dan subsidi","Menyediakan barang awam","Kesan luaran negatif terkawal","Menggalakkan pertumbuhan ekonomi","Keutamaan kepada kebajikan sosial","Kawalan terhadap monopoli"]
+ ,k:["Birokrasi menghalang sektor swasta","Agihan pendapatan masih tidak setara","Sukar menentukan dasar yang sesuai","Persaingan sektor awam dengan swasta","Pembaziran akibat kerugian perusahaan awam"]},
+"Islam":{ic:"🕌",ciri:"Semua sumber milik Allah. Individu, swasta dan kerajaan hanya menjalankan amanah. Harga ditentukan mekanisme pasaran berasaskan hukum Islam. Kegiatan yang dilarang agama tidak dibenarkan.",
+ p:["Mengutamakan kesejahteraan dunia dan akhirat","Menghapuskan riba dan ketidakpastian","Memastikan kebajikan sosial","Digalakkan mencari untung melalui perniagaan halal","Melarang kuasa monopoli","Agihan pendapatan adil dan saksama"],
+ k:[]}};
+const sb=document.getElementById("sysBtns"),box=document.getElementById("sysBox"),li=a=>a.map(x=>`<li>${x}</li>`).join("");
+function showSys(n){const o=S[n];
+ box.innerHTML=`<h3 style="margin-top:0">${o.ic} ${n}</h3><p>${o.ciri}</p><div class="two"><div class="p"><h4>Kebaikan</h4><ul class="pro">${li(o.p)}</ul></div><div class="k"><h4>Keburukan</h4>${o.k.length?`<ul class="con">${li(o.k)}</ul>`:`<p style="color:var(--mut)">Tiada senarai keburukan dalam nota kuliah ini.</p>`}</div></div>`;
+ [...sb.children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.n==n))}
+Object.keys(S).forEach(n=>{const b=document.createElement("button");b.textContent=S[n].ic+" "+n;b.dataset.n=n;b.onclick=()=>showSys(n);sb.appendChild(b)});
+showSys("Pasaran bebas");
+</script>
+</body>
+</html>
